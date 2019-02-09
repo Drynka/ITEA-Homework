@@ -1,0 +1,69 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Mali', cursive;
+	font-size: 14px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	height: 40px;
+	margin: 0 auto;
+	padding: 5px;
+	width: 100%;
+	background-color: rgb(78, 79, 71);
+}	
+.leftcontainer li {
+	float: left;
+	width: 8%;
+	padding: 0;
+}
+.leftcontainer li a {
+	display: block;
+	height: 40px;
+	color: lightgrey;
+	text-align: center;
+	line-height: 40px;
+	border-right: 1px solid grey;
+	cursor: pointer;
+	transition: 1.5s;
+}
+.leftcontainer a:hover,
+.rightcontainer a:hover {
+	color: rgb(174, 255, 0);
+}
+.rightcontainer li {
+	float: right;
+	width: 10%;
+	padding: 0;
+}
+.rightcontainer li a {
+	display: block;
+	height: 40px;
+	color: lightgrey;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	transition: 1.5s;
+}
+.fa-shoe-prints {
+	transform: rotate(270deg);
+}
+#ru {
+	margin: 0 5px;
+	width: 2%;
+}
+#en {
+	width: 2%;
+	margin-right: 10px;
+}

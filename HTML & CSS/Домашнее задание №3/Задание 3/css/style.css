@@ -1,0 +1,30 @@
+html, body {
+	height: 100%;
+	width: 100%
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+.circle {
+	list-style-type: circle;
+}
+.bread {
+	list-style-image:  url(../img/bread.png);
+}
+.sausage {
+	list-style-image:  url(../img/sausage.png);
+}
+.chees {
+	list-style-image:  url(../img/chees.png)
+}
+.juice {
+	list-style-image:  url(../img/juice.png)
+}
+.butter {
+	list-style-image:  url(../img/butter.png)
+}
+.feed {
+ 	list-style-image:  url(../img/feed.png)
+} 	

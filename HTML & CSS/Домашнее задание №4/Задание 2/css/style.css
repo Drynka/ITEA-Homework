@@ -1,0 +1,109 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.main {
+	height: 502px;
+	width: 606px;
+	border: 1px solid black;
+	margin: 15px auto;
+	position: relative;	
+}
+.block_red {
+	height: 50px;
+	width: 150px;
+	border: 1px solid black;
+	float: left;
+	background: red;
+	position: absolute;
+	top: 0;
+	left:0;
+}
+.block_green {
+	height:50px;
+	width: 250px;
+	border: 1px solid black;
+	float: left;
+	background: green;
+	position: absolute;
+	top:0;
+	left: 152px;
+}
+.block_yellow {
+	height: 200px;
+	width: 200px;
+	border: 1px solid black;
+	float: left;
+	background: yellow;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.block_blue {
+	height: 50px;
+	width: 402px;
+	border: 1px solid black;
+	position: absolute;
+	top: 50px;
+	left:0;
+	background:blue;
+}
+.block_gray {
+	height: 400px;
+	width:150px;
+	border: 1px solid black;
+	position: absolute;
+	top: 100px;
+	left:0;
+	background: gray;
+}
+.block_aqua {
+	height: 50px;
+	width: 250px;
+	border: 1px solid black;
+	position: absolute;
+	top: 100px;
+	left: 152px;
+	background: aqua;
+}
+.block_purple {
+	height: 50px;
+	width: 250px;
+	border: 1px solid black;
+	position: absolute;
+	top: 150px;
+	left: 152px;
+	background: purple;
+}
+.block_maroon {
+	height: 200px;
+	width: 452px;
+	border: 1px solid black;
+	position: absolute;
+	top: 200px;
+	left: 152px;
+	background: maroon;
+}
+.block_black {
+	height: 100px;
+	width: 250px;
+	border: 1px solid black;
+	position: absolute;
+	top: 400px;
+	left: 152px;
+	background: black;
+}
+.block_teal {
+	height: 100px;
+	width: 200px;
+	border: 1px solid black;
+	position: absolute;
+	top: 400px;
+	left: 404px;
+	background: teal;
+}

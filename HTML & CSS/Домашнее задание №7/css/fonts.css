@@ -1,0 +1,11 @@
+@font-face 
+	/*MerriweatherLight*/
+{
+	font-family: "MerriweatherLight";
+	src: url("../fonts/MerriweatherLight/MerriweatherLight.eot");
+	src: url("../fonts/MerriweatherLight/MerriweatherLight.eot?#iefix") format("embedded-opentype"),
+	 url("../fonts/MerriweatherLight/MerriweatherLight.woff") format("woff"),
+	 url("../fonts/MerriweatherLight/MerriweatherLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

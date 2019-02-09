@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	background: #1c1c1c;
+	width: 500px;
+	height: 426px;
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 150px;
+	margin: auto;
+}
+.formHeader {
+	color: white;
+	background: #222222;
+	border-bottom: 1px solid #161614;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	padding: 0 10px;
+}
+.form {
+	display: inline-block;
+	height: 50px;
+	width: 100%;
+	margin: 10px 0px;
+	border-bottom: 1px solid #161614;
+}
+.formInput {
+	width: 67%;
+	float: right;
+	margin-right: 10px;
+}
+.formInput input {
+	width: 55%;
+	height: 30px;
+	background: #222222;
+	border: 1px solid #161614;
+	color: rgb(43, 255, 53);
+}
+.formInput input:focus {
+	border: 1px solid rgb(43, 255, 53);
+	box-shadow: 0 0 2px rgb(43, 255, 53);
+}
+.formText {
+	width:25%;
+	float: left;
+	text-align: right;
+	color: white;
+}
+.formComment {
+	display: inline-block;
+	width: 100%;
+	margin: 10px 0px;	
+}
+.formArea {
+	float: right;
+	margin-right: 10px;
+	width: 67%;
+}
+.formArea textarea {
+	width: 100%;
+	height: 100px;
+	background: #222222;
+	border: 1px solid #161614;
+	resize: none;
+	color: rgb(43, 255, 53);
+}
+.formArea textarea:focus {
+	border: 1px solid rgb(43, 255, 53);
+	box-shadow: 0 0 2px rgb(43, 255, 53);
+}
+.button {
+	text-align: right;
+	margin: 0px 10px 10px;
+}
+.button input {
+	background: red;
+	color: white;
+	border: none;
+	height: 30px;
+	width: 25%;
+	border: 1px solid #161614;
+}
