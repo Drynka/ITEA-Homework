@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Создать функцию для нахождения минимального и максимального элемента массива getMinAndMax(array).
+     Результат должен выводиться в консоль.-->
+
+    <script type="text/javascript">
+      // Массив со случаными числами
+      var numArray = [3, 5, 6, 15, 2, 7, 9, 42];
+
+      // Функция сортировки массива от меньшего к большему
+      function sortNums(a, b) {
+        return a - b;
+      }
+
+      // Функция извлекает минимальное число из массива
+      function getMin(array) {
+        // array.slice() - делаем копию массива
+        // .sort(sortNums) - сортирует
+        // .shift() извлекаем первый элемент
+        return array
+          .slice()
+          .sort(sortNums)
+          .shift();
+      }
+
+      // Функция извлекает максимальное число из массива
+      function getMax(array) {
+        // array.slice() - делаем копию массива
+        // .sort(sortNums) - сортирует
+        // .pop() извлекаем последний элемент
+        return array
+          .slice()
+          .sort(sortNums)
+          .pop();
+      }
+
+      // Создаем композицию из двух функций
+      function getMinAndMax(array) {
+        var min = getMin(array);
+        var max = getMax(array);
+        console.log(min, max);
+      }
+
+      // Вызываем функцию
+      getMinAndMax(numArray);
+    </script>
+  </body>
+</html>

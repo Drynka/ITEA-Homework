@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--1. Создать функцию calculate(operand1, operand2, sign), где operand1 и operand2 — два числа, sign — знак арифметической операции.
+       Функция должна расчитывать результат операции, исходя из переданного ей знака. 
+       Функция должна проверять корректность введенных чисел и знака операции.
+       Все аргументы для функции принять от пользователя.-->
+
+    <script type="text/javascript">
+      var operand1 = +prompt("Введите первое число");
+      var sign = prompt("Введите знак арифметической операции: + - * / ");
+      var operand2 = +prompt("Введите второе число");
+
+      function calculate(operand1, operand2, sign) {
+        var add = function(a, b) {
+          return a + b;
+        };
+        var sub = function(a, b) {
+          return a - b;
+        };
+        var mul = function(a, b) {
+          return a * b;
+        };
+        var div = function(a, b) {
+          return a / b;
+        };
+
+        if (typeof operand1 !== "number" || typeof operand2 !== "number") {
+          alert("Введите число!");
+          return null;
+        }
+
+        switch (sign) {
+          case "+":
+            return add(operand1, operand2);
+          case "-":
+            return sub(operand1, operand2);
+          case "*":
+            return mul(operand1, operand2);
+
+          case "/":
+            return div(operand1, operand2);
+
+          default:
+            alert(sign + " не является знаком арифметической операции");
+            return null;
+        }
+      }
+      var result = calculate(operand1, operand2, sign);
+      console.log(result);
+    </script>
+  </body>
+</html>

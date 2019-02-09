@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--1. Среди трех чисел найти среднее арифметическое. Если среди чисел есть равные, 
+		вывести сообщение "Ошибка". Числа принять от пользователя.-->
+
+    <script type="text/javascript">
+      var a = +prompt("Введите числовое значение А");
+      var b = +prompt("Введите числовое значение B");
+      var c = +prompt("Введите числовое значение C");
+
+      if (a === b || b === c || a === c) {
+        alert("Ошибка! Введите разные числа.");
+      } else {
+        result = (a + b + c) / 3;
+      }
+
+      console.log(result);
+    </script>
+  </body>
+</html>

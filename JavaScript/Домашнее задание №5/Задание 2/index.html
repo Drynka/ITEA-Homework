@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      p {
+        height: 100px;
+        width: 172px;
+        border: 1px solid black;
+        display: inline-block;
+        margin: 15px;
+      }
+      input {
+        margin: 15px;
+      }
+      button {
+        margin-left: 165px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 2. У вас есть форма с двумя элементами ввода текста, кнопка и два тега p….Нажав
+	на кнопку, у вас в один параграф заноситься текст , который которые ввели из
+	одного элемента и в другой параграф заноситься информация из другого
+	элемента ввода. -->
+
+    <input id="firstInput" type="text" name="" />
+    <input id="secondInput" type="text" name="" />
+    <br />
+    <br />
+    <button id="button">Some button</button>
+    <br />
+    <br />
+    <p id="first"></p>
+    <p id="second"></p>
+
+    <script type="text/javascript">
+      var pFirst = document.getElementById("first");
+      var pSecond = document.getElementById("second");
+      var firstInput = document.getElementById("firstInput");
+      var secondInput = document.getElementById("secondInput");
+      var button = document.getElementById("button");
+
+      button.onclick = function() {
+        if ((firstInput != "", secondInput != "")) {
+          pFirst.innerHTML = firstInput.value;
+          pSecond.innerHTML = secondInput.value;
+        }
+      };
+    </script>
+  </body>
+</html>

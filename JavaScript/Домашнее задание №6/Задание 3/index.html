@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--3. Создать массив, который будет хранить в себе информацию о сотрудниках предприятия. Каждый элемент масива — объект,
+       содержащий свойства: name, sName, age, occupation, и метод show, который выводит всю информацию о пользователе.
+       Реализовать заполнение массива пользователем. По окончанию заполнения — вывести информацию о сотрудниках.-->
+
+    <script type="text/javascript">
+      var arr = new Array();
+      var input;
+      while (input !== null) {
+        input = prompt("Введите сотрудника: ");
+        arr = arr.concat(input);
+      }
+      arr.pop();
+      for (var i = 0; i < arr.length; i++) {
+        arr[i] = {
+          name: prompt("Введите имя " + arr[i]),
+          sName: prompt("Введите фамилию " + arr[i]),
+          age: prompt("Введите возраст " + arr[i]),
+          occupation: prompt("Введите должность " + arr[i]),
+          show: function() {
+            document.write(
+              "Имя сотрудника: " +
+                arr[i].name +
+                "<br>" +
+                "Фамилия сотрудника: " +
+                arr[i].sName +
+                "<br>" +
+                "Возраст сотрудника: " +
+                arr[i].age +
+                "<br>" +
+                "Должность сотрудника: " +
+                arr[i].occupation +
+                "<br><br>"
+            );
+          }
+        };
+        arr[i].show();
+      }
+    </script>
+  </body>
+</html>

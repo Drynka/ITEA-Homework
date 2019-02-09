@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 	3.Дан HTML код (см. под задачей). Поменяйте содержимое абзацев на их порядковый номер в коде.
+	<h2>Заголовок, не поменяется.</h2>
+	<p>Абзац, поменяется.</p>
+	<p>Абзац, поменяется.</p>
+	<p>Абзац, поменяется.</p> -->
+
+    <h2>Заголовок</h2>
+    <p></p>
+    <p></p>
+    <p></p>
+    <script type="text/javascript">
+      var p = document.getElementsByTagName("p");
+      for (i = 0; i < p.length; i++) {
+        p[i].innerHTML = "Порядковый номер абзаца " + i;
+      }
+    </script>
+  </body>
+</html>

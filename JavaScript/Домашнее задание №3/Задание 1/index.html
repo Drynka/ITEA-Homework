@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--1. Сделать собственные примеры методов применяемых для массивов.-->
+
+    <script type="text/javascript">
+      //Join
+      var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      var changeArr = arr.join("*");
+      console.log(changeArr);
+
+      console.log("***************************");
+
+      // //Concat
+      var list = ["молоко", "хлеб", "сыр"];
+      var input;
+      while (input !== null) {
+        input = prompt("Сптсок покупок:\n" + list.join("\n") + "\n");
+        list = list.concat(input);
+      }
+      document.write(list.join("<br>"));
+
+      //Reverse
+      var position = ["first", "second", "third", "fourth", "fifth"];
+      position.reverse();
+      console.log(
+        "Отображает массив после применения 'reverse': " + position.join(", ")
+      );
+
+      console.log(
+        "******************************************************************"
+      );
+
+      //Slice
+      var notebook = ["samsung", "hp", "lenovo", "acer", "asus", "macbook"];
+      console.log("Исходный массив: " + notebook.join(", "));
+      var part = notebook.slice(1, 5);
+      console.log("Изменённый массив: " + part.join(", "));
+      part = notebook.slice(3);
+      console.log("Изменённый массив: " + part.join(", "));
+      part = notebook.slice(3, -1);
+      console.log("Изменённый массив: " + part.join(", "));
+
+      console.log(
+        "******************************************************************"
+      );
+
+      // Splice
+      var phones = ["samsung", "nokia", "Iphone", "HTC", "Meizu", "Honor"];
+      console.log("Исходный массив: " + phones.join(", "));
+      var del = phones.splice(1, 2);
+      console.log("Удаленные телефоны: " + del.join(", "));
+      console.log("Остаток: " + phones.join(", "));
+      phones.splice(1, 0, "siemens", "motorola", "huawei");
+      console.log("Массив после добавления: " + phones.join(", "));
+
+      console.log(
+        "******************************************************************"
+      );
+
+      //Sort
+      var years = [1945, 2112, 1218, 1367, 13, 21, 1991, 2000];
+      years.sort();
+      console.log("Отсортированный массив (плохой метод): " + years.join(", "));
+      var fruits = ["peach", "grape", "plum", "apple", "banana"];
+      fruits.sort();
+      console.log("Отсортированный массив: " + fruits.join(", "));
+      years.sort(function(a, b) {
+        return a - b;
+      });
+      console.log(
+        "Отсортированный массив (с помощью функции): " + years.join(", ")
+      );
+
+      console.log(
+        "******************************************************************"
+      );
+
+      // Push
+      var trademark = ["adidas", "nike", "arena", "asics"];
+      console.log("Исходный массив: " + trademark.join(", "));
+      console.log("Длина исходного массива: " + trademark.length);
+      trademark.push("under armour");
+      console.log("После добавления: " + trademark.join(", "));
+      console.log("Длина массива после добавления: " + trademark.length);
+      trademark.push("cat", "DC", "dakine");
+      console.log("После добавления: " + trademark.join(", "));
+      console.log("Длина массива после добавления: " + trademark.length);
+
+      console.log(
+        "******************************************************************"
+      );
+
+      //Pop
+      var trademark = [
+        "adidas",
+        "nike",
+        "arena",
+        "asics",
+        "cat",
+        "DC",
+        "dakine"
+      ];
+      console.log("Исходный массив: " + trademark.join(", "));
+      console.log("Длина исходного массива: " + trademark.length);
+      var delElement = trademark.pop();
+      console.log("Изменённый массив: " + trademark.join(", "));
+      console.log("Удаленный элемент: " + delElement);
+      console.log("Длина изменённого массива: " + trademark.length);
+      var delElement = trademark.pop();
+      console.log("Изменённый массив: " + trademark.join(", "));
+      console.log("Удаленный элемент: " + delElement);
+      console.log("Длина изменённого массива: " + trademark.length);
+
+      console.log(
+        "******************************************************************"
+      );
+
+      // Unshift
+      var trademark = ["adidas", "nike", "arena", "asics"];
+      console.log("Исходный массив: " + trademark.join(", "));
+      console.log("Длина исходного массива: " + trademark.length);
+      trademark.unshift("under armour");
+      console.log("После добавления: " + trademark.join(", "));
+      console.log("Длина массива после добавления: " + trademark.length);
+      trademark.unshift("cat", "DC", "dakine");
+      console.log("После добавления: " + trademark.join(", "));
+      console.log("Длина массива после добавления: " + trademark.length);
+
+      console.log(
+        "******************************************************************"
+      );
+
+      // Shift
+      var trademark = [
+        "adidas",
+        "nike",
+        "arena",
+        "asics",
+        "cat",
+        "DC",
+        "dakine"
+      ];
+      console.log("Исходный массив: " + trademark.join(", "));
+      console.log("Длина исходного массива: " + trademark.length);
+      var delElement = trademark.shift();
+      console.log("Изменённый массив: " + trademark.join(", "));
+      console.log("Удаленный элемент: " + delElement);
+      console.log("Длина изменённого массива: " + trademark.length);
+      var delElement = trademark.shift();
+      console.log("Изменённый массив: " + trademark.join(", "));
+      console.log("Удаленный элемент: " + delElement);
+      console.log("Длина изменённого массива: " + trademark.length);
+    </script>
+  </body>
+</html>

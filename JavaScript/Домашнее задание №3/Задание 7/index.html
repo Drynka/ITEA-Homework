@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 	7. Создать два произвольных массива: один массив - любимая спортивная команда / модели автомобилей / города, во втором - количество игроков в команде / объем двигателя / количество жителей в городе. Объединить данные из двух массивов и вывести их в одну строку. -->
+
+    <script type="text/javascript">
+      var arr = ["Barcelona ", "Lexus ", "Lvov "];
+      var secondArr = [25, "5.7L", 721301];
+      var FK = arr[0].concat(secondArr[0]);
+      document.write(
+        "Любимая футбольная команда: " + FK + " человек в команде.<br>"
+      );
+      var car = arr[1].concat(secondArr[1]);
+      document.write("Любимый автомобтль: " + car + " обьем двигателя.<br>");
+      var city = arr[2].concat(secondArr[2]);
+      document.write(
+        "Любимый город: " + city + " - человек населения в городе."
+      );
+    </script>
+  </body>
+</html>

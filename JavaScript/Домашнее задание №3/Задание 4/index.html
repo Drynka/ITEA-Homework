@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--4. Отсортировать массив на 10 чисел в порядке возростания. Значения принимаются от пользователя. Сортировка осушествляется методом sort(). -->
+
+    <script type="text/javascript">
+      var numbers = new Array(10);
+      for (i = 0; i < 10; i++) {
+        numbers[i] = prompt("Введите любое число");
+      }
+      numbers.sort(function(a, b) {
+        return a - b;
+      });
+      console.log(numbers);
+    </script>
+  </body>
+</html>

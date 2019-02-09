@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--1. Создать объект Point, содержащий два свойства: "x" и "y" — координаты точки, и метод GetQuadrant, вычисляющий,
+       в каком квадранте в декартовой системе координат находится данная точка.
+       Протестируйте данный объект, изменяя значения его координат, и повторно вызавая метод GetQuadrant.-->
+
+    <script type="text/javascript">
+      var Point = {
+        x: +prompt('Введите значение координаты "Х"'),
+        y: +prompt('Введите значение координаты "Y"'),
+        GetQuadrant: function() {
+          if (this.x > 0 && this.y > 0) {
+            console.log("Координаты лежат в первом координатном угле");
+          }
+          if (this.x < 0 && this.y > 0) {
+            console.log("Координаты лежат во втором координатном угле");
+          }
+          if (this.x < 0 && this.y < 0) {
+            console.log("Координаты лежат в третем координатном угле");
+          }
+          if (this.x > 0 && this.y < 0) {
+            console.log("Координаты лежат в четвёртом координатном угле");
+          }
+        }
+      };
+      Point.GetQuadrant();
+    </script>
+  </body>
+</html>

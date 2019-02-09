@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <!--1. По координатам двух точек, которые вводит пользователь, определить уравнение прямой, проходящей через эти точки.
+	Общий вид уравнения: y = kx + b; где k = (y1 - y2) / (x1 - x2), b = y2 - k*x2.-->
+
+    <script type="text/javascript">
+      var y1 = prompt("Введите значение Y1");
+      var y2 = prompt("Введите значение Y2");
+      var x1 = prompt("Введите значение Х1");
+      var x2 = prompt("Введите значение Х2");
+      var k = (y1 - y2) / (x1 - x2);
+      var b = y2 - k * x2;
+      var equation = k + "x + " + b;
+      document.write(equation);
+    </script>
+  </body>
+</html>

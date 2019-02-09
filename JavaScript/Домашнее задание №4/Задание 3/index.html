@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--/*3.  Создать игру "Камень-Ножницы-Бумага".
+        Выбор компьютера определяется строкой:  "var computerChoice = Math.random(); alert(computerChoice);".
+		Math.random() выдает произвольное число в промежутке от 0 до 1,
+		на основании этого можно построить принцип выбора решения компьютера.*/-->
+
+    <script type="text/javascript">
+      var userChoice = prompt("Камень-Ножницы-Бумага");
+      var computerChoice = Math.random();
+      if (computerChoice < 0.33) {
+        computerChoice = "Камень";
+      } else if (computerChoice < 0.66) {
+        computerChoice = "Ножницы";
+      } else computerChoice = "Бумага";
+      console.log(computerChoice);
+      var choice1 = userChoice;
+      var choice2 = computerChoice;
+      var comparison = function(choice1, choice2) {
+        if (choice1 === choice2) {
+          return "Ничья!";
+        } else if (choice1 === "Камень") {
+          if (choice2 === "Ножницы") {
+            return "Камень бьет Ножницы!(Камень победил)";
+          } else {
+            return "Бумага обворачивает Камень!(Бумага победила)";
+          }
+        } else if (choice1 === "Ножницы") {
+          if (choice2 === "Бумага") {
+            return "Ножницы режут Бумагу!(Ножницы победили)";
+          } else {
+            return "Камень бьет Ножницы(Камень победил)";
+          }
+        } else if (choice1 === "Бумага") {
+          if (choice2 === "Камень") {
+            return "Бумага обворачивает Камень!(Бумага победила)";
+          } else {
+            return "Ножницы режут Бумагу!(Ножницы победили)";
+          }
+        }
+      };
+      console.log(comparison(choice1, choice2));
+    </script>
+  </body>
+</html>
